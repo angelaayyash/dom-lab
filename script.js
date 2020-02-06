@@ -112,3 +112,14 @@ form.addEventListener("submit", e => {
   );
   display();
 });
+
+let cardsContainer = document.querySelector(".contact-container");
+cardsContainer.addEventListener("click", deleted);
+
+function deleted(e) {
+  if (e.target.className === "fas fa-trash") {
+    let trashIndex = e.target.getAttribute("index-number");
+    addressBook.deleteAt(trashIndex);
+    display();
+  }
+}
