@@ -110,6 +110,7 @@ form.addEventListener("submit", e => {
     formData.get("phone"),
     formData.get("relation")
   );
+  form.reset;
   display();
 });
 

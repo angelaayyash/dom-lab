@@ -66,8 +66,16 @@ label {
   margin: 5px;
   border-radius: 5px;
   padding: 10px;
+  position: relative;
 }
 
-.fa trash {
+.fa-trash {
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
   color: red;
+  right: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  border: 1px solid black;
 }
